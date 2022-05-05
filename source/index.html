@@ -1,35 +1,11 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
+
+  @@include('html/head.html')
 
   <body class="page__body">
-    <header class="header">
-      <nav class="header__navigation navigation">
 
-        <a class="navigation__icon" href="index.html" tabindex="-1">
-          <img class="navigation__icon-image" src="img/logo/cat-energy-icon-mobile.svg" width="34" height="38" alt="Cat-flash спешит на помощь.">
-        </a>
-
-        <a class="navigation__logo" href="index.html">
-          <img class="navigation__logo-image" src="img/logo/cat-energy-logo-mobile.svg" width="101" height="18" alt="Cat Energy – интернет-магазин функционального питания для котов.">
-        </a>
-
-        <ul class="navigation__list site-navigation">
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    @@include('html/header.html')
 
     <main class="main">
       <h1 class="visually-hidden">Cat Energy – интернет-магазин функционального питания для котов.</h1>
@@ -119,33 +95,7 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <a class="footer__logo" href="index.html">
-        <img class="footer__logo-image" src="img/logo/cat-energy-logo-footer.svg" width="128" height="24" alt="Cat Energy – интернет-магазин функционального питания для котов.">
-      </a>
+    @@include('html/footer.html')
 
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Мы в VKontakte.</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Мы в YouTube.</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <span class="visually-hidden">Мы в Telegram.</span>
-          </a>
-        </li>
-      </ul>
-
-      <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="footer__copyright-text">HTML Academy</p>
-        <img class="footer__copyright-image" src="img/logo/html-academy-logo.svg" width="27" height="34" alt="Разработано в HTML Academy.">
-      </a>
-    </footer>
   </body>
 </html>
