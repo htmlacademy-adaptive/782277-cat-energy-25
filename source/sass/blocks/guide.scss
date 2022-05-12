@@ -1,0 +1,135 @@
+.guide {
+  min-width: $small-width;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.guide__title {
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.guide__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.guide__item {
+  position: relative;
+  min-height: 60px;
+  padding-left: 80px;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $color-guide-icon-background;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--nutrition::before {
+    background-image: url("../img/decor/nutrition-icon.svg");
+    background-size: 30px 32px;
+  }
+
+  &--powder::before {
+    background-image: url("../img/decor/powder-icon.svg");
+    background-size: 29px 31px;
+  }
+
+  &--fork::before {
+    background-image: url("../img/decor/fork-icon.svg");
+    background-size: 25px 30px;
+  }
+
+  &--time::before {
+    background-image: url("../img/decor/time-icon.svg");
+    background-size: 32px 33px;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .guide {
+    padding: 16px 30px 45px;
+    border-bottom: 1px solid $color-guide-border;
+  }
+
+  .guide__title {
+    margin-bottom: 32px;
+  }
+
+  .guide__list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 60px;
+    row-gap: 37px;
+    counter-reset: guide-item;
+  }
+
+  .guide__item {
+    min-height: 280px;
+    padding: 150px 60px 20px 0;
+    font-size: 16px;
+    line-height: math.div(24, 16);
+    counter-increment: guide-item;
+
+    &::before {
+      top: 39px;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 76px;
+      content: counter(guide-item);
+      font-family: $font-secondary;
+      font-style: normal;
+      font-size: 280px;
+      line-height: math.div(280, 280);
+      font-weight: 400;
+      text-align: center;
+      color: $color-guide-counter-text;
+    }
+
+    &:first-child::after {
+      right: 100px;
+    }
+  }
+}
+
+@media (min-width: $large-width) {
+  .guide {
+    max-width: $large-width;
+    margin-bottom: 0;
+    padding: 22px 110px;
+    border: 0;
+  }
+
+  .guide__list {
+    column-gap: 70px;
+    margin-right: -10px;
+  }
+
+  .guide__item {
+    padding-right: 0;
+
+    &::after {
+      right: 8px;
+    }
+
+    &:first-child::after {
+      right: 30px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.title {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 36px;
+  line-height: math.div(40, 36);
+  font-weight: 400;
+  color: $color-title;
+
+  @media (min-width: $medium-width) {
+    font-size: 60px;
+    line-height: math.div(60, 60);
+  }
+}

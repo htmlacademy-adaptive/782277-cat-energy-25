@@ -1,0 +1,90 @@
+// Шрифты проекта
+$font-main: "Arial", sans-serif;
+$font-secondary: "Oswald", "Arial", sans-serif;
+
+$font-button: $font-secondary;
+$font-input: $font-secondary;
+$font-textarea: $font-secondary;
+
+// Ширина viewport для разных устройств
+$small-width: 320px;
+$small-width-only: 767px;
+$medium-width: 768px;
+$medium-width-only: 1439px;
+$large-width: 1440px;
+
+// Оттенки серого
+$transparent: rgba(0, 0, 0, 0);
+$color-inverse: #ffffff;
+
+$gray-lightest: #f2f2f2;
+$gray-lighten-234: #eaeaea;
+$gray-lighten-231: #e7e7e7;
+$gray-lighten: #dcdcdc;
+$gray-light: #d3d3d3;
+$gray: #cdcdcd;
+$gray-dark: #666666;
+$gray-darken: #444444;
+$gray-darken-34: #222222;
+$gray-darken-17: #111111;
+$gray-darkest: #000000;
+
+// Основной цвет проекта
+$color-base: #68b738;
+
+// Общие цвета
+$color-main: $gray-darken;
+$color-background: $color-inverse;
+$color-title: $gray-darkest;
+$color-title-inverse: $color-inverse;
+$color-text: $gray-darkest;
+$color-text-inverse: $color-inverse;
+
+// main-button
+$color-button-text: $gray-darkest;
+$color-button-text-inverse: $color-inverse;
+$color-button-background: $color-base;
+
+// header
+$color-nav-toggle-icon: $gray-darkest;
+$color-nav-item-active: $color-base;
+$color-nav-item-active-inverse: $color-inverse;
+$color-nav-item-border: $gray-lighten-231;
+
+// footer
+$color-footer-background: $gray-lightest;
+$color-footer-border: $gray-light;
+$color-footer-social-icon: $gray-dark;
+
+// index-intro
+$color-intro-background: $color-base;
+$color-intro-mask: rgba($color-intro-background, 0.85);
+
+// index-program
+$color-program-background: $gray-lightest;
+$color-program-border: $gray-light;
+
+// index-guide
+$color-guide-icon-background: $color-base;
+$color-guide-counter-text: $gray-lightest;
+$color-guide-border: $gray-lighten-231;
+
+// index-example
+$color-example-background: $gray-lighten-234;
+$color-example-description-border: $gray;
+
+// index-example-range
+$color-range-scale-background: $gray-lighten;
+$color-range-pin: $color-base;
+$color-range-pin-background: $color-inverse;
+$color-range-pin-border: $gray;
+$color-range-pin-shadow: rgba($gray-darkest, 0.16);
+$color-range-button-border: $gray;
+
+// index-contacts
+$color-contacts-offer: $gray-darken-17;
+
+// index-contacts-map
+$color-map-tooltip-text: $gray-darken;
+$color-map-tooltip-border: $gray-darken-34;
+$color-map-tooltip-shadow: rgba($gray-darkest, 0.25);

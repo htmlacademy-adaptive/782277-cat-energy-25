@@ -1,0 +1,14 @@
+.header {
+  min-width: $small-width;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $medium-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $large-width) {
+    max-width: $large-width;
+    padding: 0 110px;
+  }
+}

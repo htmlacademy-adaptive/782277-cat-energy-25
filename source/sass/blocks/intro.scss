@@ -1,0 +1,190 @@
+.intro {
+  position: relative;
+
+  &::after {
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    width: 100%;
+    min-height: 302px;
+    background-image:
+      linear-gradient($color-intro-mask, $color-intro-mask),
+      url("../img/decor/intro-background-mobile.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 0, center 0;
+    background-size: cover, 320px 302px;
+    transform: translateX(-50%);
+  }
+}
+
+.intro__wrapper {
+  display: grid;
+  grid-template-areas:
+    "intro-title"
+    "intro-slogan"
+    "intro-image"
+    "intro-button";
+  justify-items: center;
+  min-width: $small-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.intro__title {
+  grid-area: intro-title;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 6px 15px;
+  font-size: 36px;
+  line-height: math.div(36, 36);
+  text-align: center;
+  color: $color-title-inverse;
+}
+
+.intro__slogan {
+  grid-area: intro-slogan;
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 10px;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 14px;
+  line-height: math.div(14, 14);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-text-inverse;
+}
+
+.intro__image {
+  @include image-normalize;
+  grid-area: intro-image;
+  width: 280px;
+  height: 270px;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.intro__button {
+  grid-area: intro-button;
+  width: 100%;
+  padding: 11px;
+  font-size: 14px;
+  line-height: math.div(18, 14);
+}
+
+@media (min-width: $medium-width) {
+  .intro {
+    @media (max-width: $medium-width-only) {
+      &::after {
+        content: initial;
+      }
+    }
+  }
+
+  .intro__wrapper {
+    position: relative;
+    grid-template-areas:
+      "intro-title"
+      "intro-slogan"
+      "intro-button"
+      "intro-image";
+    grid-template-rows: min-content min-content auto;
+    justify-items: start;
+    align-items: start;
+    min-height: 850px;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+
+  .intro__title {
+    margin-bottom: 21px;
+    padding: 10px 87px;
+    font-size: 60px;
+    line-height: math.div(60, 60);
+    text-align: left;
+    color: $color-title;
+  }
+
+  .intro__slogan {
+    margin-bottom: 39px;
+    padding: 10px 89px;
+    font-size: 20px;
+    line-height: math.div(20, 20);
+    color: $color-text;
+  }
+
+  .intro__button {
+    width: 34.5%;
+    margin-left: 90px;
+    padding: 17px;
+    font-size: 20px;
+    line-height: math.div(20, 20);
+  }
+
+  .intro__image {
+    z-index: -1;
+    position: absolute;
+    top: -39.6%;
+    left: 50%;
+    width: 709px;
+    height: 609px;
+    margin: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $large-width) {
+  .intro {
+    position: static;
+
+    &::after {
+      width: 50vw;
+      min-height: 694px;
+      background-image:
+        linear-gradient($color-intro-mask, $color-intro-mask),
+        url("../img/decor/intro-background-desktop.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: left 0, left 0;
+      background-size: cover, cover;
+      transform: none;
+    }
+  }
+
+  .intro__wrapper {
+    grid-template-areas:
+      "intro-title  intro-image"
+      "intro-slogan intro-image"
+      "intro-button intro-image";
+    grid-template-columns: 590px 1fr;
+    max-width: $large-width;
+    min-height: 530px;
+    padding: 48px 110px;
+    padding-bottom: 0;
+  }
+
+  .intro__title {
+    margin-bottom: 20px;
+    padding: 10px 80px;
+  }
+
+  .intro__slogan {
+    margin-bottom: 42px;
+    padding: 10px 80px;
+  }
+
+  .intro__button {
+    width: 244px;
+    margin-left: 80px;
+  }
+
+  .intro__image {
+    top: -36px;
+    left: 34.6%;
+    width: 552px;
+    height: 499px;
+  }
+}

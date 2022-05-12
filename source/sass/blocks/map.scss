@@ -1,0 +1,73 @@
+.map {
+  position: relative;
+}
+
+.map__image {
+  @include image-normalize;
+  width: 320px;
+  height: 362px;
+}
+
+.map__interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+
+  &--disabled {
+    pointer-events: none;
+  }
+}
+
+.map__tooltip {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 200px;
+  margin: 0;
+  padding: 10px;
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: math.div(20, 16);
+  text-align: center;
+  color: $color-map-tooltip-text;
+  background-color: $color-background;
+  background-image: url("../../img/logo/cat-energy-icon-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center left 10px;
+  background-size: 33px 37px;
+  border: 1px solid $color-map-tooltip-border;
+  box-shadow: 0 5px 10px $color-map-tooltip-shadow;
+  transform: translate(-50%, -50%);
+
+  &--active {
+    display: block;
+  }
+
+  &--disabled {
+    display: none;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .map__image {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .map__image {
+    width: 1440px;
+    height: 400px;
+  }
+
+  .map__tooltip {
+    top: 50%;
+    left: 60%;
+  }
+}
