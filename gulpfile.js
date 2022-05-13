@@ -32,7 +32,7 @@ export const styles = () => {
 // HTML
 
 const html = () => {
-  return gulp.src(['source/*.html', '!source/html/*.html'])
+  return gulp.src('source/*.html')
     .pipe(include({
       prefix: '@@',
       basepath: '@file'

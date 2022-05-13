@@ -36,23 +36,23 @@
     background-position: center;
   }
 
-  &--nutrition::before {
-    background-image: url("../img/decor/nutrition-icon.svg");
+  &--step-1::before {
+    background-image: url("../img/decor/step-1.svg");
     background-size: 30px 32px;
   }
 
-  &--powder::before {
-    background-image: url("../img/decor/powder-icon.svg");
+  &--step-2::before {
+    background-image: url("../img/decor/step-2.svg");
     background-size: 29px 31px;
   }
 
-  &--fork::before {
-    background-image: url("../img/decor/fork-icon.svg");
+  &--step-3::before {
+    background-image: url("../img/decor/step-3.svg");
     background-size: 25px 30px;
   }
 
-  &--time::before {
-    background-image: url("../img/decor/time-icon.svg");
+  &--step-4::before {
+    background-image: url("../img/decor/step-4.svg");
     background-size: 32px 33px;
   }
 }
