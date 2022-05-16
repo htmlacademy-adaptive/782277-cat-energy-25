@@ -45,37 +45,35 @@
   }
 
   .toggle__comparison {
-    position: relative;
+    grid-template-columns: 50% 1fr;
+    justify-items: start;
     width: 592px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 
   .toggle__picture {
+    width: 100%;
     overflow: hidden;
 
     &--before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 50%;
-      background-image: linear-gradient($color-background 34%, $color-example-background 34%);
+      z-index: 1;
     }
 
     &--after {
-      display: block;
-      margin-left: 55px;
+      display: flex;
+      justify-content: flex-end;
     }
   }
 
   .toggle__image {
     &--before {
-      width: 650px;
-      height: 499px;
+      width: 590px;
+      height: 511px;
     }
 
     &--after {
-      width: 538px;
-      height: 513px;
+      width: 536px;
+      height: 511px;
     }
   }
 }
@@ -83,11 +81,5 @@
 @media (min-width: $large-width) {
   .toggle__comparison {
     margin-bottom: 20px;
-  }
-
-  .toggle__picture {
-    &--before {
-      background-image: linear-gradient($color-background 36.2%, $color-example-background 36.2%);
-    }
   }
 }

@@ -161,7 +161,7 @@
     position: static;
 
     &::after {
-      width: 50vw;
+      width: 50%;
       min-height: 694px;
       background-image:
         linear-gradient($color-intro-mask, $color-intro-mask),

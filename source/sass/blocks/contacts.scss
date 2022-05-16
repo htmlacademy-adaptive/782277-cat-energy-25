@@ -59,18 +59,17 @@
 @media (min-width: $large-width) {
   .contacts {
     position: relative;
-    max-width: $large-width;
   }
 
   .contacts__block {
     z-index: 1;
     position: absolute;
-    top: 48.5%;
-    left: 7.6%;
+    top: 50%;
+    left: 50%;
     width: 565px;
     min-height: 198px;
     padding: 20px 48px 20px 60px;
-    transform: translateY(-50%);
+    transform: translate(-108%, -53%);
     background-color: $color-background;
   }
 
