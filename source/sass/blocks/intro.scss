@@ -9,12 +9,13 @@
     content: "";
     width: 100%;
     min-height: 302px;
+    background-color: $color-intro-background;
     background-image:
       linear-gradient($color-intro-mask, $color-intro-mask),
       url("../img/decor/intro-background-mobile.webp");
     background-repeat: no-repeat, no-repeat;
     background-position: center 0, center 0;
-    background-size: cover, 320px 302px;
+    background-size: cover, contain;
     transform: translateX(-50%);
 
     .no-webp & {
@@ -166,7 +167,7 @@
         linear-gradient($color-intro-mask, $color-intro-mask),
         url("../img/decor/intro-background-desktop.webp");
       background-repeat: no-repeat, no-repeat;
-      background-position: left 0, left 0;
+      background-position: center, center;
       background-size: cover, cover;
       transform: none;
 

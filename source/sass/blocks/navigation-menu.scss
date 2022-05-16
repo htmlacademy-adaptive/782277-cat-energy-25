@@ -23,6 +23,28 @@
   color: $color-title;
   background-color: $color-background;
   border-bottom: 1px solid $color-nav-item-border;
+
+  &:hover {
+    color: $color-title-hover;
+  }
+
+  &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    outline-offset: -6px;
+  }
+
+  &:active {
+    color: $color-title-active;
+    outline: none;
+  }
 }
 
 @media (min-width: $medium-width) {
@@ -58,6 +80,10 @@
       height: 2px;
       background-color: $color-nav-item-active;
     }
+
+    &:focus-visible {
+      outline-offset: 0;
+    }
   }
 }
 
@@ -74,6 +100,14 @@
 
     &--active::after {
       background-color: $color-nav-item-active-inverse;
+    }
+
+    &:hover {
+      color: $color-title-inverse-hover;
+    }
+
+    &:active {
+      color: $color-title-inverse-active;
     }
   }
 }

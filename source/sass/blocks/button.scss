@@ -13,4 +13,26 @@
   background-color: $color-button-background;
   border: 0;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-button-background-hover;
+  }
+
+  &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $color-button-text-inverse-active;
+    outline: none;
+  }
 }

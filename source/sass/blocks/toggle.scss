@@ -6,6 +6,9 @@
 }
 
 .toggle__comparison {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   width: 280px;
   margin-bottom: 14px;
 }
@@ -35,7 +38,6 @@
   }
 
   .toggle__comparison {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     width: 592px;
     margin-bottom: 16px;

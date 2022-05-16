@@ -23,6 +23,28 @@
   margin-top: 7px;
   padding: 32px;
   border-bottom: 1px solid $color-footer-border;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    outline-offset: -10px;
+  }
+
+  &[href]:active {
+    outline: none;
+    opacity: 0.6;
+  }
 }
 
 .footer__logo-image {
@@ -42,8 +64,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 -10px;
-  padding: 22px 10px;
+  margin: 0 -12px;
+  padding: 22px 12px;
+
+  &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    outline-offset: -6px;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
 }
 
 .footer__copyright-text {
@@ -60,19 +100,24 @@
   @include image-normalize;
   width: 27px;
   height: 34px;
+  fill: $color-footer-copyright-icon;
+}
+
+.footer__copyright:hover .footer__copyright-image {
+  fill: $color-footer-copyright-icon-hover;
 }
 
 @media (min-width: $medium-width) {
   .footer__wrapper {
     grid-template-areas: "footer-logo footer-social footer-copyright";
-    grid-template-columns: 170px 1fr 174px;
+    grid-template-columns: min-content 1fr min-content;
     align-items: center;
     min-height: 147px;
     padding: 0 30px;
   }
 
   .footer__logo {
-    justify-content: flex-start;
+    width: 152px;
     margin-top: 0;
     margin-left: -12px;
     padding: 12px;
@@ -84,11 +129,12 @@
   }
 
   .footer__copyright {
+    width: 187px;
     margin-left: 0;
   }
 
   .footer__copyright-text {
-    width: 100%;
+    width: 80%;
   }
 }
 

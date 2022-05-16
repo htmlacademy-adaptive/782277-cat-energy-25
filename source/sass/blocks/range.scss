@@ -55,6 +55,31 @@
       content: "";
       border-bottom: 1px dotted $color-range-button-border;
     }
+
+    &:hover::after {
+      border-bottom-style: solid;
+    }
+
+    &:focus {
+      outline: auto;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-outline;
+      outline-offset: -2px;
+    }
+
+    &:active {
+      outline: none;
+    }
+
+    &:active::after {
+      border: 0;
+    }
   }
 
   .range__scale {
@@ -87,6 +112,29 @@
       background-color: $color-range-pin;
       border-radius: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px $color-range-pin-shadow-hover;
+    }
+
+    &:focus {
+      outline: auto;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-outline;
+      outline-offset: 0;
+    }
+
+    &:active {
+      border-color: $color-range-pin-border-active;
+      box-shadow: 0 3px 5px $color-range-pin-shadow-active;
+      outline: none;
     }
   }
 }
