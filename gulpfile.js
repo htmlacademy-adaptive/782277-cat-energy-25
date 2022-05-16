@@ -112,6 +112,11 @@ const clean = () => {
   return del('build');
 }
 
+// Deploy
+
+const ghpages = require('gh-pages');
+ghpages.publish('build');
+
 // Server
 
 const server = (done) => {
