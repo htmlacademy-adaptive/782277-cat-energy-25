@@ -1,56 +1,16 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <title>HTML Academy: Кэт энерджи</title>
-    <meta name="description" content="Функциональное питание для котов - Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim">
-    <meta name="keywords" content="функциональное питание, похудение, набор массы, коты">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
+  @@include("html/head.html", {
+    "title": "HTML Academy: Кэт энерджи",
+    "description": "Функциональное питание для котов - Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim",
+    "keywords": "функциональное питание, похудение, набор массы, коты"
+  })
 
   <body class="page__body">
     <div class="page__wrapper">
 
-      <header class="header">
-        <nav class="header__navigation navigation navigation--closed navigation--nojs">
-
-          <a class="navigation__icon" href="index.html" tabindex="-1">
-            <img class="navigation__icon-image" src="img/logo/cat-energy-icon.svg" width="34" height="38" alt="Cat-flash спешит на помощь.">
-          </a>
-
-          <a class="navigation__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo/cat-energy-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo/cat-energy-logo-tablet.svg">
-              <img class="navigation__logo-image" src="img/logo/cat-energy-logo-mobile.svg" width="101" height="18" alt="Cat Energy – интернет-магазин функционального питания для котов.">
-            </picture>
-          </a>
-
-          <button class="navigation__toggle" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-
-          <ul class="navigation__list navigation-menu">
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link navigation-menu__link--active" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="navigation-menu__item">
-              <a class="navigation-menu__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      @@include("html/header.html")
 
       <main class="main">
         <h1 class="visually-hidden">Cat Energy – интернет-магазин функционального питания для котов.</h1>
@@ -177,51 +137,10 @@
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <a class="footer__logo" href="index.html">
-            <img class="footer__logo-image" src="img/logo/cat-energy-logo-footer.svg" width="128" height="24" alt="Cat Energy – интернет-магазин функционального питания для котов.">
-          </a>
+      @@include("html/footer.html")
 
-          <ul class="footer__social social">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Мы в VKontakte.</span>
-                <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite/sprite.svg#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Мы в YouTube.</span>
-                <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite/sprite.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Мы в Telegram.</span>
-                <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite/sprite.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="footer__copyright-text">HTML Academy</p>
-            <svg class="footer__copyright-image" width="27" height="34" role="img" aria-label="Разработано в HTML Academy.">
-              <use xlink:href="img/sprite/sprite.svg#html-academy"></use>
-            </svg>
-          </a>
-        </div>
-      </footer>
     </div>
 
-    <script src="js/background-webp.min.js"></script>
-    <script src="js/navigation-menu.min.js"></script>
-    <script src="js/interactive-map.min.js"></script>
+    @@include("html/script.html")
   </body>
 </html>
