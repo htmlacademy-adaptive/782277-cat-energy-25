@@ -58,7 +58,7 @@ $color-button-background-hover: $color-dark;
 $color-nav-toggle-icon: $gray-darkest;
 $color-nav-item-active: $color-base;
 $color-nav-item-active-inverse: $color-inverse;
-$color-nav-item-border: $gray-lighten-231;
+$color-nav-border: $gray-lighten-231;
 
 // footer
 $color-footer-social-icon: $gray-dark;
@@ -99,8 +99,22 @@ $color-range-button-border: $gray;
 
 // index-contacts
 $color-contacts-offer: $gray-darken-17;
+$color-contacts-background-inner: $gray-lightest;
 
 // index-contacts-map
 $color-map-tooltip-text: $gray-darken;
 $color-map-tooltip-border: $gray-darken-34;
 $color-map-tooltip-shadow: rgba($gray-darkest, 0.25);
+
+// form
+$color-form-fieldset-border: $gray-light;
+$color-form-legend-line: $color-base;
+$color-form-input-icon: $gray-darkest;
+$color-form-input-border: $gray-lighten-231;
+$color-form-textarea-border: $gray-lighten-231;
+$color-form-radio: $color-base;
+$color-form-radio-background: $color-inverse;
+$color-form-radio-border: $gray;
+$color-form-checkbox: $color-base;
+$color-form-checkbox-background: $color-inverse;
+$color-form-checkbox-border: $gray;

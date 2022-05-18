@@ -9,6 +9,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 26px 20px;
+
+  &--inner {
+    background-color: $color-contacts-background-inner;
+  }
 }
 
 .contacts__offer {

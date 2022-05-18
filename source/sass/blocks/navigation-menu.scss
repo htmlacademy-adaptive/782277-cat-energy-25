@@ -5,7 +5,7 @@
 }
 
 .navigation-menu__item:first-child .navigation-menu__link {
-  border-top: 1px solid $color-nav-item-border;
+  border-top: 1px solid $color-nav-border;
 }
 
 .navigation-menu__link {
@@ -22,7 +22,7 @@
   text-align: center;
   color: $color-title;
   background-color: $color-background;
-  border-bottom: 1px solid $color-nav-item-border;
+  border-bottom: 1px solid $color-nav-border;
 
   &:hover {
     color: $color-title-hover;
@@ -108,6 +108,22 @@
 
     &:active {
       color: $color-title-inverse-active;
+    }
+
+    .navigation-menu--inner & {
+      color: $color-title;
+    }
+
+    .navigation-menu--inner &--active::after {
+      background-color: $color-nav-item-active;
+    }
+
+    .navigation-menu--inner &:hover {
+      color: $color-title-hover;
+    }
+
+    .navigation-menu--inner &:active {
+      color: $color-title-active;
     }
   }
 }

@@ -1,0 +1,378 @@
+.form {
+  display: grid;
+  grid-template-areas:
+    "fieldset-cat         "
+    "fieldset-program     "
+    "fieldset-owner       "
+    "fieldset-comment     "
+    "fieldset-additionally"
+    "fieldset-footer      ";
+  grid-template-columns: 1fr;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__legend {
+  margin: 0;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 24px;
+  line-height: math.div(26, 24);
+  font-weight: 400;
+  color: $color-title;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__label {
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 16px;
+  line-height: math.div(18, 16);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-main;
+}
+
+.form__input {
+  font-family: $font-input;
+  font-style: normal;
+  font-size: 16px;
+  line-height: math.div(18, 16);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-main;
+}
+
+.form__textarea {
+  font-family: $font-textarea;
+  font-style: normal;
+  font-size: 16px;
+  line-height: math.div(18, 16);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-main;
+}
+
+// Данные кота
+.form__fieldset--cat {
+  grid-area: fieldset-cat;
+  padding: 24px 20px;
+}
+
+.form__fieldset--cat .form__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset--cat .form__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.form__fieldset--cat .form__label {
+  max-width: 50%;
+  margin-right: 16px;
+  padding: 12px 0;
+}
+
+.form__fieldset--cat .form__input {
+  flex: auto;
+  padding: 12px;
+  border: 1px solid $color-form-input-border;
+}
+
+// Выбор программы
+.form__fieldset--program {
+  grid-area: fieldset-program;
+  padding: 22px 20px 18px;
+  border-top: 1px solid $color-form-fieldset-border;
+  border-bottom: 1px solid $color-form-fieldset-border;
+}
+
+.form__fieldset--program .form__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset--program .form__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.form__fieldset--program .form__label {
+  position: relative;
+  padding: 6px;
+  padding-left: 45px;
+  cursor: pointer;
+}
+
+.form__label--radio::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: $color-form-radio-background;
+  border: 1px solid $color-form-radio-border;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.form__input:checked + .form__label--radio::before {
+  background-image: radial-gradient(circle closest-side at center, $color-form-radio 45%, $color-form-radio-background 50%);
+}
+
+// Данные владельца
+.form__fieldset--owner {
+  grid-area: fieldset-owner;
+  padding: 20px;
+}
+
+.form__fieldset--owner .form__legend {
+  margin-bottom: 29px;
+}
+
+.form__fieldset--owner .form__legend--line {
+  position: relative;
+}
+
+.form__fieldset--owner .form__legend--line::after {
+  z-index: -1;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $color-form-legend-line;
+}
+
+.form__fieldset--owner .form__legend-text {
+  display: inline-block;
+  padding: 6px 18px 6px 0;
+  background-color: $color-background;
+}
+
+.form__fieldset--owner .form__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__fieldset--owner .form__item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.form__fieldset--owner .form__label {
+  max-width: 50%;
+  margin-right: 10px;
+  padding: 12px 0;
+}
+
+.form__fieldset--owner .form__input-wrapper {
+  position: relative;
+  flex: auto;
+  margin: 0;
+}
+
+.form__fieldset--owner .form__input {
+  width: 100%;
+  padding: 13px 40px 12px 14px;
+  border: 1px solid $color-form-input-border;
+}
+
+.form__fieldset--owner .form__input-icon {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+
+  &--email {
+    width: 20px;
+    height: 15px;
+    stroke: $color-form-input-icon;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 21px;
+    fill: $color-form-input-icon;
+  }
+}
+
+// Комментарий к программе
+.form__fieldset--comment {
+  grid-area: fieldset-comment;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 18px;
+}
+
+.form__fieldset--comment .form__legend {
+  margin-bottom: 31px;
+}
+
+.form__fieldset--comment .form__legend--line {
+  position: relative;
+}
+
+.form__fieldset--comment .form__legend--line::after {
+  z-index: -1;
+  position: absolute;
+  top: 55%;
+  left: 20px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $color-form-legend-line;
+  transform: translateY(-50%);
+}
+
+.form__fieldset--comment .form__legend-text {
+  display: inline-block;
+  padding: 6px 22px 6px 0;
+  background-color: $color-background;
+}
+
+.form__fieldset--comment .form__textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 10px;
+  padding-left: 15px;
+  border: 1px solid $color-form-textarea-border;
+}
+
+// Дополнительные пожелания
+.form__fieldset--additionally {
+  grid-area: fieldset-additionally;
+  margin-bottom: 15px;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.form__fieldset--additionally .form__legend {
+  margin-bottom: 27px;
+}
+
+.form__fieldset--additionally .form__legend--line {
+  position: relative;
+}
+
+.form__fieldset--additionally .form__legend--line::after {
+  z-index: -1;
+  position: absolute;
+  top: 55%;
+  left: 20px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: $color-form-legend-line;
+  transform: translateY(-50%);
+}
+
+.form__fieldset--additionally .form__legend-text {
+  display: inline-block;
+  padding: 6px 18px 6px 0;
+  background-color: $color-background;
+}
+
+.form__fieldset--additionally .form__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 12px;
+}
+
+.form__fieldset--additionally .form__item {
+  display: flex;
+  align-items: center;
+}
+
+.form__fieldset--additionally .form__label {
+  position: relative;
+  padding: 6px;
+  padding-left: 45px;
+  cursor: pointer;
+}
+
+.form__label--checkbox::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: $color-form-checkbox-background;
+  border: 1px solid $color-form-checkbox-border;
+  transform: translateY(-50%);
+}
+
+.form__input:checked + .form__label--checkbox::before {
+  background-image: url("../img/decor/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 14px;
+}
+
+// Оформить заявку
+.form__fieldset--footer {
+  grid-area: fieldset-footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.form__button {
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.form__required {
+  margin: 0;
+  padding: 12px;
+  font-size: 14px;
+  line-height: math.div(16, 14);
+  color: $color-text;
+}
+
+@media (min-width: $medium-width) {
+  .form__label {
+    font-size: 20px;
+    line-height: math.div(30, 20);
+  }
+
+  .form__input {
+    font-size: 20px;
+    line-height: math.div(30, 20);
+  }
+
+  .form__textarea {
+    font-size: 20px;
+    line-height: math.div(30, 20);
+  }
+
+  .form__required {
+    font-size: 16px;
+    line-height: math.div(16, 16);
+  }
+}

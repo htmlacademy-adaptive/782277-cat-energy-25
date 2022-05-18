@@ -1,0 +1,34 @@
+.questionnaire {
+  min-width: $small-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.questionnaire__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 7px 20px;
+  font-size: 36px;
+  line-height: math.div(36, 36);
+}
+
+.questionnaire__intro {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 14px;
+  line-height: math.div(18, 14);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+@media (min-width: $medium-width) {
+  .questionnaire__intro {
+    font-size: 20px;
+    line-height: math.div(30, 20);
+  }
+}
