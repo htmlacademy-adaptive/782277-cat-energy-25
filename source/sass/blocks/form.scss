@@ -265,8 +265,7 @@
 // Дополнительные пожелания
 .form__fieldset--additionally {
   grid-area: fieldset-additionally;
-  margin-bottom: 15px;
-  padding: 20px;
+  padding: 35px 20px;
   padding-top: 0;
 }
 
@@ -356,6 +355,11 @@
 }
 
 @media (min-width: $medium-width) {
+  .form__legend {
+    font-size: 36px;
+    line-height: math.div(36, 36);
+  }
+
   .form__label {
     font-size: 20px;
     line-height: math.div(30, 20);
@@ -371,7 +375,176 @@
     line-height: math.div(30, 20);
   }
 
+  // Данные кота
+  .form__fieldset--cat {
+    padding: 23px 67px 24px 71px;
+  }
+
+  .form__fieldset--cat .form__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  .form__fieldset--cat .form__input {
+    padding: 10px 18px;
+  }
+
+  // Выбор программы
+  .form__fieldset--program {
+    margin: 48px 67px 50px 71px;
+    padding: 22px 28px;
+    border: 1px solid $color-form-fieldset-border;
+  }
+
+  .form__fieldset--program .form__item {
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+  }
+
+  .form__fieldset--program .form__label {
+    padding-left: 58px;
+  }
+
+  .form__label--radio::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  // Данные владельца
+  .form__fieldset--owner {
+    padding: 20px 0;
+  }
+
+  .form__fieldset--owner .form__legend {
+    margin-bottom: 50px;
+    padding: 0 69px;
+  }
+
+  .form__fieldset--owner .form__legend--line::after {
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .form__fieldset--owner .form__legend-text {
+    margin-left: -40px;
+    padding: 6px 40px;
+  }
+
+  .form__fieldset--owner .form__legend-br {
+    display: none;
+  }
+
+  .form__fieldset--owner .form__list {
+    padding: 20px 66px 20px 70px;
+  }
+
+  .form__fieldset--owner .form__item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .form__fieldset--owner .form__label {
+    margin-right: 16px;
+  }
+
+  .form__fieldset--owner .form__input {
+    padding: 10px 40px 10px 21px;
+  }
+
+  .form__fieldset--owner .form__input-icon {
+    right: 17px;
+  }
+
+  // Комментарий к программе
+  .form__fieldset--comment {
+    padding: 20px 0 39px;
+  }
+
+  .form__fieldset--comment .form__legend {
+    margin-bottom: 69px;
+    padding: 0 69px;
+  }
+
+  .form__fieldset--comment .form__legend--line::after {
+    top: 60%;
+    left: 0;
+  }
+
+  .form__fieldset--comment .form__legend-text {
+    margin-left: -40px;
+    padding: 6px 40px;
+  }
+
+  .form__fieldset--comment .form__textarea {
+    width: auto;
+    min-height: 174px;
+    margin: 0 67px 0 71px;
+    padding: 10px 18px;
+  }
+
+  // Дополнительные пожелания
+  .form__fieldset--additionally {
+    padding: 20px 0 31px;
+  }
+
+  .form__fieldset--additionally .form__legend {
+    margin-bottom: 28px;
+    padding: 0 69px;
+  }
+
+  .form__fieldset--additionally .form__legend--line::after {
+    top: 60%;
+    left: 0;
+  }
+
+  .form__fieldset--additionally .form__legend-text {
+    margin-left: -40px;
+    padding: 6px 40px;
+  }
+
+  .form__fieldset--additionally .form__list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 30px;
+    padding: 22px 70px;
+  }
+
+  .form__fieldset--additionally .form__label {
+    padding-left: 59px;
+  }
+
+  .form__label--checkbox::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .form__input:checked + .form__label--checkbox::before {
+    background-size: 24px 18px;
+  }
+
+  // Оформить заявку
+  .form__fieldset--footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 52px 71px;
+    padding-top: 0;
+  }
+
+  .form__button {
+    width: 45%;
+    margin-right: 50px;
+    margin-bottom: 0;
+    padding: 16px;
+    font-size: 20px;
+    line-height: math.div(20, 20);
+  }
+
   .form__required {
+    width: 47%;
     font-size: 16px;
     line-height: math.div(16, 16);
   }

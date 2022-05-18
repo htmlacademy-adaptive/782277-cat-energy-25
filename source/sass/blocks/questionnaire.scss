@@ -27,7 +27,16 @@
 }
 
 @media (min-width: $medium-width) {
+  .questionnaire__title {
+    margin-bottom: 15px;
+    padding: 20px 68px;
+    font-size: 60px;
+    line-height: math.div(60, 60);
+  }
+
   .questionnaire__intro {
+    margin-bottom: 22px;
+    padding: 20px 70px;
     font-size: 20px;
     line-height: math.div(30, 20);
   }
