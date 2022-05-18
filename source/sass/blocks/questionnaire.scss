@@ -2,13 +2,12 @@
   min-width: $small-width;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
 }
 
 .questionnaire__title {
   margin: 0;
   margin-bottom: 20px;
-  padding: 7px 20px;
+  padding: 27px 20px 7px;
   font-size: 36px;
   line-height: math.div(36, 36);
 }
@@ -29,7 +28,7 @@
 @media (min-width: $medium-width) {
   .questionnaire__title {
     margin-bottom: 15px;
-    padding: 20px 68px;
+    padding: 40px 68px 20px;
     font-size: 60px;
     line-height: math.div(60, 60);
   }
@@ -39,5 +38,19 @@
     padding: 20px 70px;
     font-size: 20px;
     line-height: math.div(30, 20);
+  }
+}
+
+@media (min-width: $large-width) {
+  .questionnaire {
+    max-width: $large-width;
+  }
+
+  .questionnaire__title {
+    padding: 22px 110px;
+  }
+
+  .questionnaire__intro {
+    padding: 20px 110px;
   }
 }

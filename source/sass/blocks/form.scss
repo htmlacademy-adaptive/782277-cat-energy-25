@@ -170,17 +170,14 @@
 }
 
 .form__fieldset--owner .form__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 13px;
 }
 
 .form__fieldset--owner .form__item {
   display: flex;
   align-items: center;
-
-  &:not(:last-child) {
-    margin-bottom: 13px;
-  }
 }
 
 .form__fieldset--owner .form__label {
@@ -338,7 +335,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding: 20px;
+  padding-top: 0;
 }
 
 .form__button {
@@ -438,13 +436,8 @@
   }
 
   .form__fieldset--owner .form__list {
+    row-gap: 16px;
     padding: 20px 66px 20px 70px;
-  }
-
-  .form__fieldset--owner .form__item {
-    &:not(:last-child) {
-      margin-bottom: 16px;
-    }
   }
 
   .form__fieldset--owner .form__label {
@@ -507,7 +500,7 @@
   }
 
   .form__fieldset--additionally .form__list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     column-gap: 60px;
     row-gap: 30px;
     padding: 22px 70px;
@@ -530,13 +523,12 @@
   .form__fieldset--footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 52px 71px;
+    padding: 72px 71px;
     padding-top: 0;
   }
 
   .form__button {
     width: 45%;
-    margin-right: 50px;
     margin-bottom: 0;
     padding: 16px;
     font-size: 20px;
@@ -547,5 +539,84 @@
     width: 47%;
     font-size: 16px;
     line-height: math.div(16, 16);
+  }
+}
+
+@media (min-width: $large-width) {
+  .form {
+    grid-template-areas:
+      "fieldset-cat          fieldset-program     "
+      "fieldset-owner        fieldset-owner       "
+      "fieldset-comment      fieldset-comment     "
+      "fieldset-additionally fieldset-additionally"
+      "fieldset-footer       fieldset-footer      ";
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+  }
+
+  // Данные кота
+  .form__fieldset--cat {
+    padding: 22px;
+    padding-left: 110px;
+  }
+
+  // Выбор программы
+  .form__fieldset--program {
+    margin: 22px;
+    margin-right: 110px;
+  }
+
+  // Данные владельца
+  .form__fieldset--owner {
+    padding: 40px 0 19px;
+  }
+
+  .form__fieldset--owner .form__legend {
+    padding: 0 110px;
+  }
+
+  .form__fieldset--owner .form__list {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    column-gap: 76px;
+    padding: 20px 110px;
+  }
+
+  // Комментарий к программе
+  .form__fieldset--comment {
+    padding: 20px 0 43px;
+  }
+
+  .form__fieldset--comment .form__legend {
+    padding: 0 110px;
+  }
+
+  .form__fieldset--comment .form__textarea {
+    margin: 0 110px;
+  }
+
+  // Дополнительные пожелания
+  .form__fieldset--additionally {
+    padding: 20px 0 37px;
+  }
+
+  .form__fieldset--additionally .form__legend {
+    padding: 0 110px;
+  }
+
+  .form__fieldset--additionally .form__list {
+    column-gap: 80px;
+    padding: 22px 110px;
+  }
+
+  // Оформить заявку
+  .form__fieldset--footer {
+    justify-content: flex-start;
+    padding: 82px 111px;
+    padding-top: 0;
+  }
+
+  .form__button {
+    width: 46.6%;
+    margin-right: 70px;
   }
 }
