@@ -703,6 +703,12 @@
     padding: 0 110px;
   }
 
+  .form__fieldset--owner .form__legend--line::after {
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+  }
+
   .form__fieldset--owner .form__list {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     column-gap: 76px;
@@ -718,6 +724,12 @@
     padding: 0 110px;
   }
 
+  .form__fieldset--comment .form__legend--line::after {
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+  }
+
   .form__fieldset--comment .form__textarea {
     margin: 0 110px;
   }
@@ -729,6 +741,12 @@
 
   .form__fieldset--additionally .form__legend {
     padding: 0 110px;
+  }
+
+  .form__fieldset--additionally .form__legend--line::after {
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
   }
 
   .form__fieldset--additionally .form__list {
