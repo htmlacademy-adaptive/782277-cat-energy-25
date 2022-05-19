@@ -90,6 +90,34 @@
   flex: auto;
   padding: 12px;
   border: 1px solid $color-form-input-border;
+
+  &:hover {
+    border-color: $color-form-input-border-hover;
+  }
+
+  &:focus {
+    border-color: $color-form-input-border-focus;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $color-form-input-border-active;
+    outline: none;
+  }
+
+  &--error {
+    border-color: $color-form-input-border-error;
+  }
+}
+
+.form__fieldset--cat .form__input--number {
+  appearance: textfield;
+}
+
+.form__fieldset--cat .form__input--number::-webkit-outer-spin-button,
+.form__fieldset--cat .form__input--number::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 // Выбор программы
@@ -119,6 +147,18 @@
   padding: 6px;
   padding-left: 45px;
   cursor: pointer;
+
+  &:hover::before {
+    border-color: $color-form-radio-border-hover;
+  }
+
+  &:active::before {
+    border-color: $color-form-radio-border-active;
+  }
+}
+
+.form__item:focus-within .form__label--radio::before {
+  border-color: $color-form-radio-border-focus;
 }
 
 .form__label--radio::before {
@@ -136,6 +176,11 @@
 
 .form__input:checked + .form__label--radio::before {
   background-image: radial-gradient(circle closest-side at center, $color-form-radio 45%, $color-form-radio-background 50%);
+}
+
+.form__input:disabled + .form__label--radio {
+  opacity: 0.3;
+  cursor: default;
 }
 
 // Данные владельца
@@ -196,6 +241,54 @@
   width: 100%;
   padding: 13px 40px 12px 14px;
   border: 1px solid $color-form-input-border;
+
+  &:hover {
+    border-color: $color-form-input-border-hover;
+  }
+
+  &:focus {
+    border-color: $color-form-input-border-focus;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $color-form-input-border-active;
+    outline: none;
+  }
+
+  &--error {
+    border-color: $color-form-input-border-error;
+  }
+}
+
+.form__input-wrapper:hover .form__input-icon {
+  &--email {
+    stroke: $color-form-input-icon-focus;
+  }
+
+  &--phone {
+    fill: $color-form-input-icon-focus;
+  }
+}
+
+.form__input-wrapper:focus-within .form__input-icon {
+  &--email {
+    stroke: $color-form-input-icon-focus;
+  }
+
+  &--phone {
+    fill: $color-form-input-icon-focus;
+  }
+}
+
+.form__input--error .form__input-icon {
+  &--email {
+    stroke: $color-form-input-icon-error;
+  }
+
+  &--phone {
+    fill: $color-form-input-icon-error;
+  }
 }
 
 .form__fieldset--owner .form__input-icon {
@@ -257,6 +350,24 @@
   padding: 10px;
   padding-left: 15px;
   border: 1px solid $color-form-textarea-border;
+
+  &:hover {
+    border-color: $color-form-textarea-border-hover;
+  }
+
+  &:focus {
+    border-color: $color-form-textarea-border-focus;
+    outline: none;
+  }
+
+  &:active {
+    border-color: $color-form-textarea-border-active;
+    outline: none;
+  }
+
+  &--error {
+    border-color: $color-form-textarea-border-error;
+  }
 }
 
 // Дополнительные пожелания
@@ -308,6 +419,18 @@
   padding: 6px;
   padding-left: 45px;
   cursor: pointer;
+
+  &:hover::before {
+    border-color: $color-form-checkbox-border-hover;
+  }
+
+  &:active::before {
+    border-color: $color-form-checkbox-border-active;
+  }
+}
+
+.form__item:focus-within .form__label--checkbox::before {
+  border-color: $color-form-checkbox-border-focus;
 }
 
 .form__label--checkbox::before {
@@ -327,6 +450,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 14px;
+}
+
+.form__input:disabled + .form__label--checkbox {
+  opacity: 0.3;
+  cursor: default;
 }
 
 // Оформить заявку

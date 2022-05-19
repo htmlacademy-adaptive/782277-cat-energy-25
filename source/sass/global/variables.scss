@@ -23,6 +23,7 @@ $gray-lighten-231: #e7e7e7;
 $gray-lighten: #dcdcdc;
 $gray-light: #d3d3d3;
 $gray: #cdcdcd;
+$gray-186: #bababa;
 $gray-dark: #666666;
 $gray-darken: #444444;
 $gray-darken-34: #222222;
@@ -32,7 +33,9 @@ $gray-darkest: #000000;
 // Основной цвет проекта
 $color-base: #68b738;
 $color-dark: #5eaa2f;
-$color-secondary: #fdc305;
+
+$color-focus: #fdc305;
+$color-error: #ff8282;
 
 // Общие цвета
 $color-main: $gray-darken;
@@ -45,7 +48,7 @@ $color-title-inverse-hover: rgba($color-title-inverse, 0.6);
 $color-title-inverse-active: rgba($color-title-inverse, 0.3);
 $color-text: $gray-darkest;
 $color-text-inverse: $color-inverse;
-$color-outline: $color-secondary;
+$color-outline: $color-focus;
 
 // main-button
 $color-button-text: $gray-darkest;
@@ -106,15 +109,39 @@ $color-map-tooltip-text: $gray-darken;
 $color-map-tooltip-border: $gray-darken-34;
 $color-map-tooltip-shadow: rgba($gray-darkest, 0.25);
 
-// form
+// form-fieldset
 $color-form-fieldset-border: $gray-light;
 $color-form-legend-line: $color-base;
+
+// form-input
 $color-form-input-icon: $gray-darkest;
+$color-form-input-icon-focus: $color-base;
+$color-form-input-icon-error: $color-error;
 $color-form-input-border: $gray-lighten-231;
+$color-form-input-border-hover: $gray;
+$color-form-input-border-focus: $color-focus;
+$color-form-input-border-active: $gray-darkest;
+$color-form-input-border-error: $color-error;
+
+// form-textarea
 $color-form-textarea-border: $gray-lighten-231;
+$color-form-textarea-border-hover: $gray;
+$color-form-textarea-border-focus: $color-focus;
+$color-form-textarea-border-active: $gray-darkest;
+$color-form-textarea-border-error: $color-error;
+
+// form-radio
 $color-form-radio: $color-base;
 $color-form-radio-background: $color-inverse;
 $color-form-radio-border: $gray;
+$color-form-radio-border-hover: $gray-186;
+$color-form-radio-border-focus: $color-focus;
+$color-form-radio-border-active: $gray-darkest;
+
+// form-checkbox
 $color-form-checkbox: $color-base;
 $color-form-checkbox-background: $color-inverse;
 $color-form-checkbox-border: $gray;
+$color-form-checkbox-border-hover: $gray-186;
+$color-form-checkbox-border-focus: $color-focus;
+$color-form-checkbox-border-active: $gray-darkest;
