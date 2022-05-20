@@ -1,0 +1,23 @@
+.catalog {
+  min-width: $small-width;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  min-height: 104px;
+  margin: 0;
+  padding: 27px 20px;
+  font-size: 36px;
+  line-height: math.div(36, 36);
+  border-bottom: 1px solid $color-catalog-title-border;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.catalog__item {
+  border-bottom: 1px solid $color-catalog-product-border;
+}

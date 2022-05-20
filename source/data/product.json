@@ -1,0 +1,72 @@
+[
+  {
+    "image": "catalog-1",
+    "width": "68",
+    "height": "86",
+    "alt": "Cat Energy PRO 500 г со вкусом курицы",
+    "title": "Cat Energy PRO 500&nbsp;г",
+    "weight": "500&nbsp;г",
+    "taste": "Курица",
+    "price": "700&nbsp;Р."
+  },
+  {
+    "image": "catalog-2",
+    "width": "84",
+    "height": "101",
+    "alt": "Cat Energy PRO 1000 г со вкусом курицы",
+    "title": "Cat Energy PRO 1000&nbsp;г",
+    "weight": "1000&nbsp;г",
+    "taste": "Курица",
+    "price": "1000&nbsp;Р."
+  },
+  {
+    "image": "catalog-3",
+    "width": "68",
+    "height": "78",
+    "alt": "Cat Energy PRO 500 г со вкусом рыбы",
+    "title": "Cat Energy PRO 500&nbsp;г",
+    "weight": "500&nbsp;г",
+    "taste": "Рыба",
+    "price": "700&nbsp;Р."
+  },
+  {
+    "image": "catalog-4",
+    "width": "84",
+    "height": "101",
+    "alt": "Cat Energy PRO 1000 г со вкусом рыбы",
+    "title": "Cat Energy PRO 1000&nbsp;г",
+    "weight": "1000&nbsp;г",
+    "taste": "Рыба",
+    "price": "1000&nbsp;Р."
+  },
+  {
+    "image": "catalog-5",
+    "width": "68",
+    "height": "78",
+    "alt": "Cat Energy slim 500 г со вкусом гречки",
+    "title": "Cat Energy slim 500&nbsp;г",
+    "weight": "500&nbsp;г",
+    "taste": "Гречка",
+    "price": "400&nbsp;Р."
+  },
+  {
+    "image": "catalog-6",
+    "width": "84",
+    "height": "100",
+    "alt": "Cat Energy PRO 1000 г со вкусом гречки",
+    "title": "Cat Energy slim 1000&nbsp;г",
+    "weight": "1000&nbsp;г",
+    "taste": "Гречка",
+    "price": "700&nbsp;Р."
+  },
+  {
+    "image": "catalog-7",
+    "width": "72",
+    "height": "84",
+    "alt": "Cat Energy slim 500 г со вкусом риса",
+    "title": "Cat Energy slim 500&nbsp;г",
+    "weight": "500&nbsp;г",
+    "taste": "Рис",
+    "price": "500&nbsp;Р."
+  }
+]

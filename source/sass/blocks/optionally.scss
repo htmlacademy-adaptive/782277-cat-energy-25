@@ -1,0 +1,103 @@
+.optionally__title {
+  position: relative;
+  margin: 0;
+  padding: 20px 20px 28px 0;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 24px;
+  line-height: math.div(24, 24);
+  font-weight: 400;
+  color: $color-title;
+
+  &::after {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background-color: $color-catalog-optionally-line;
+    transform: translateX(-50%);
+  }
+}
+
+.optionally__title-text {
+  display: inline-block;
+  padding: 6px 20px;
+  background-color: $color-background;
+}
+
+.optionally__list {
+  @include list-reset;
+  margin: 0 20px 38px;
+  border-top: 1px solid $color-catalog-optionally-border;
+  border-bottom: 1px solid $color-catalog-optionally-border;
+}
+
+.optionally__offer {
+  position: relative;
+  display: flex;
+  min-height: 290px;
+  margin: 0 20px 34px;
+  background-color: $color-catalog-optionally-background;
+  background-image:
+    linear-gradient($color-catalog-optionally-mask, $color-catalog-optionally-mask),
+    url("../img/decor/optionally-background-mobile.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &::after {
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/decor/gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 78px 80px;
+    transform: translateX(-50%);
+  }
+
+  .no-webp & {
+    background-image:
+      linear-gradient($color-catalog-optionally-mask, $color-catalog-optionally-mask),
+      url("../img/decor/optionally-background-mobile.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient($color-catalog-optionally-mask, $color-catalog-optionally-mask),
+      url("../img/decor/optionally-background-mobile@2x.webp");
+
+    .no-webp & {
+      background-image:
+        linear-gradient($color-catalog-optionally-mask, $color-catalog-optionally-mask),
+        url("../img/decor/optionally-background-mobile@2x.jpg");
+    }
+  }
+}
+
+.optionally__offer-text {
+  margin: 0;
+  margin-top: auto;
+  padding: 43px 58px;
+  font-size: 16px;
+  line-height: math.div(20, 16);
+  text-align: center;
+  color: $color-text-inverse;
+}
+
+@media (min-width: $medium-width) {
+  .optionally__title {
+    font-size: 36px;
+    line-height: math.div(36, 36);
+  }
+
+  .optionally__offer-text {
+    text-align: left;
+  }
+}

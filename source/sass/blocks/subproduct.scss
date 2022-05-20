@@ -1,0 +1,62 @@
+.subproduct {
+  display: grid;
+  grid-template-areas:
+    "sp-title  sp-title "
+    "sp-pack   sp-price "
+    "sp-button sp-button";
+  grid-template-columns: 1fr 30%;
+  row-gap: 15px;
+  padding: 12px 0 16px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-catalog-optionally-border;
+  }
+}
+
+.subproduct__title {
+  grid-area: sp-title;
+  margin: 0;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 16px;
+  line-height: math.div(16, 16);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-catalog-subproduct-title;
+}
+
+.subproduct__pack {
+  grid-area: sp-pack;
+  margin: 0;
+  font-size: 14px;
+  line-height: math.div(14, 14);
+}
+
+.subproduct__price {
+  grid-area: sp-price;
+  margin: 0;
+  font-size: 14px;
+  line-height: math.div(14, 14);
+  text-align: right;
+}
+
+.subproduct__button {
+  grid-area: sp-button;
+}
+
+@media (min-width: $medium-width) {
+  .subproduct__title {
+    font-size: 20px;
+    line-height: math.div(20, 20);
+  }
+
+  .subproduct__pack {
+    font-size: 16px;
+    line-height: math.div(20, 16);
+  }
+
+  .subproduct__price {
+    font-size: 16px;
+    line-height: math.div(20, 16);
+  }
+}

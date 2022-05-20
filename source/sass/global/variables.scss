@@ -149,3 +149,16 @@ $color-form-checkbox-border: $gray;
 $color-form-checkbox-border-hover: $gray-186;
 $color-form-checkbox-border-focus: $color-focus;
 $color-form-checkbox-border-active: $gray-darkest;
+
+// catalog
+$color-catalog-title-border: $gray-lighten-231;
+$color-catalog-product-title: $gray-darken-34;
+$color-catalog-product-border: $gray-lighten-231;
+$color-catalog-product-all-title: $gray-darken-17;
+$color-catalog-subproduct-title: $gray-darken-34;
+
+// catalog-optionally
+$color-catalog-optionally-background: $color-base;
+$color-catalog-optionally-mask: rgba($color-intro-background, 0.85);
+$color-catalog-optionally-line: $color-base;
+$color-catalog-optionally-border: $gray;

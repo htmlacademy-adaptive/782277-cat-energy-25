@@ -11,9 +11,9 @@
     <div class="page__wrapper">
 
       @@include("html/header.html", {
-        "header__navigation--inner": "header__navigation--inner",
-        "navigation-menu--inner": "navigation-menu--inner",
-        "catalog-active": "navigation-menu__link--active"
+        "navigationInner": "header__navigation--inner",
+        "menuInner": "navigation-menu--inner",
+        "catalog": "navigation-menu__link--active"
       })
 
       <main class="main">
@@ -21,138 +21,12 @@
           <h1 class="catalog__title title">Каталог продукции</h1>
 
           <ul class="catalog__list">
-            <li class="catalog__item">
-              @@include("html/product.html", {
-                "pr-img-src": "img/product/catalog-1-mobile.png",
-                "pr-img-src2x": "img/product/catalog-1-mobile@2x.png 2x",
-                "pr-img-src768": "img/product/catalog-1-tablet.png 1x, img/product/catalog-1-tablet@2x.png 2x",
-                "pr-img-src1440": "img/product/catalog-1-desktop.png 1x, img/product/catalog-1-desktop@2x.png 2x",
-                "pr-img-webp": "img/product/catalog-1-mobile.webp 1x, img/product/catalog-1-mobile@2x.webp 2x",
-                "pr-img-webp768": "img/product/catalog-1-tablet.webp 1x, img/product/catalog-1-tablet@2x.webp 2x",
-                "pr-img-webp1440": "img/product/catalog-1-desktop.webp 1x, img/product/catalog-1-desktop@2x.webp 2x",
-                "pr-img-width": "68",
-                "pr-img-height": "86",
-                "pr-img-alt": "Cat Energy PRO 500 г со вкусом курицы",
-                "pr-title": "Cat Energy PRO 500 г",
-                "pr-weight": "500 г",
-                "pr-taste": "Курица",
-                "pr-price": "700 Р."
-              })
-            </li>
-            <li class="catalog__item">
-              @@include("html/product.html", {
-                "pr-img-src": "img/product/catalog-2-mobile.png",
-                "pr-img-src2x": "img/product/catalog-2-mobile@2x.png 2x",
-                "pr-img-src768": "img/product/catalog-2-tablet.png 1x, img/product/catalog-2-tablet@2x.png 2x",
-                "pr-img-src1440": "img/product/catalog-2-desktop.png 1x, img/product/catalog-2-desktop@2x.png 2x",
-                "pr-img-webp": "img/product/catalog-2-mobile.webp 1x, img/product/catalog-2-mobile@2x.webp 2x",
-                "pr-img-webp768": "img/product/catalog-2-tablet.webp 1x, img/product/catalog-2-tablet@2x.webp 2x",
-                "pr-img-webp1440": "img/product/catalog-2-desktop.webp 1x, img/product/catalog-2-desktop@2x.webp 2x",
-                "pr-img-width": "84",
-                "pr-img-height": "101",
-                "pr-img-alt": "Cat Energy PRO 1000 г со вкусом курицы",
-                "pr-title": "Cat Energy PRO 1000 г",
-                "pr-weight": "1000 г",
-                "pr-taste": "Курица",
-                "pr-price": "1000 Р."
-              })
-            </li>
-            <li class="catalog__item">
-              @@include("html/product.html", {
-                "pr-img-src": "img/product/catalog-3-mobile.png",
-                "pr-img-src2x": "img/product/catalog-3-mobile@2x.png 2x",
-                "pr-img-src768": "img/product/catalog-3-tablet.png 1x, img/product/catalog-3-tablet@2x.png 2x",
-                "pr-img-src1440": "img/product/catalog-3-desktop.png 1x, img/product/catalog-3-desktop@2x.png 2x",
-                "pr-img-webp": "img/product/catalog-3-mobile.webp 1x, img/product/catalog-3-mobile@2x.webp 2x",
-                "pr-img-webp768": "img/product/catalog-3-tablet.webp 1x, img/product/catalog-3-tablet@2x.webp 2x",
-                "pr-img-webp1440": "img/product/catalog-3-desktop.webp 1x, img/product/catalog-3-desktop@2x.webp 2x",
-                "pr-img-width": "68",
-                "pr-img-height": "78",
-                "pr-img-alt": "Cat Energy PRO 500 г со вкусом рыбы",
-                "pr-title": "Cat Energy PRO 500 г",
-                "pr-weight": "500 г",
-                "pr-taste": "Рыба",
-                "pr-price": "700 Р."
-              })
-            </li>
-            <li class="catalog__item">
-              @@include("html/product.html", {
-                "pr-img-src": "img/product/catalog-4-mobile.png",
-                "pr-img-src2x": "img/product/catalog-4-mobile@2x.png 2x",
-                "pr-img-src768": "img/product/catalog-4-tablet.png 1x, img/product/catalog-4-tablet@2x.png 2x",
-                "pr-img-src1440": "img/product/catalog-4-desktop.png 1x, img/product/catalog-4-desktop@2x.png 2x",
-                "pr-img-webp": "img/product/catalog-4-mobile.webp 1x, img/product/catalog-4-mobile@2x.webp 2x",
-                "pr-img-webp768": "img/product/catalog-4-tablet.webp 1x, img/product/catalog-4-tablet@2x.webp 2x",
-                "pr-img-webp1440": "img/product/catalog-4-desktop.webp 1x, img/product/catalog-4-desktop@2x.webp 2x",
-                "pr-img-width": "84",
-                "pr-img-height": "101",
-                "pr-img-alt": "Cat Energy PRO 1000 г со вкусом рыбы",
-                "pr-title": "Cat Energy PRO 1000 г",
-                "pr-weight": "1000 г",
-                "pr-taste": "Рыба",
-                "pr-price": "1000 Р."
-              })
-            </li>
-            <li class="catalog__item">
-              @@include("html/product.html", {
-                "pr-img-src": "img/product/catalog-5-mobile.png",
-                "pr-img-src2x": "img/product/catalog-5-mobile@2x.png 2x",
-                "pr-img-src768": "img/product/catalog-5-tablet.png 1x, img/product/catalog-5-tablet@2x.png 2x",
-                "pr-img-src1440": "img/product/catalog-5-desktop.png 1x, img/product/catalog-5-desktop@2x.png 2x",
-                "pr-img-webp": "img/product/catalog-5-mobile.webp 1x, img/product/catalog-5-mobile@2x.webp 2x",
-                "pr-img-webp768": "img/product/catalog-5-tablet.webp 1x, img/product/catalog-5-tablet@2x.webp 2x",
-                "pr-img-webp1440": "img/product/catalog-5-desktop.webp 1x, img/product/catalog-5-desktop@2x.webp 2x",
-                "pr-img-width": "68",
-                "pr-img-height": "78",
-                "pr-img-alt": "Cat Energy slim 500 г со вкусом гречки",
-                "pr-title": "Cat Energy slim 500 г",
-                "pr-weight": "500 г",
-                "pr-taste": "Гречка",
-                "pr-price": "400 Р."
-              })
-            </li>
-            <li class="catalog__item">
-              @@include("html/product.html", {
-                "pr-img-src": "img/product/catalog-6-mobile.png",
-                "pr-img-src2x": "img/product/catalog-6-mobile@2x.png 2x",
-                "pr-img-src768": "img/product/catalog-6-tablet.png 1x, img/product/catalog-6-tablet@2x.png 2x",
-                "pr-img-src1440": "img/product/catalog-6-desktop.png 1x, img/product/catalog-6-desktop@2x.png 2x",
-                "pr-img-webp": "img/product/catalog-6-mobile.webp 1x, img/product/catalog-6-mobile@2x.webp 2x",
-                "pr-img-webp768": "img/product/catalog-6-tablet.webp 1x, img/product/catalog-6-tablet@2x.webp 2x",
-                "pr-img-webp1440": "img/product/catalog-6-desktop.webp 1x, img/product/catalog-6-desktop@2x.webp 2x",
-                "pr-img-width": "84",
-                "pr-img-height": "100",
-                "pr-img-alt": "Cat Energy PRO 1000 г со вкусом гречки",
-                "pr-title": "Cat Energy slim 1000 г",
-                "pr-weight": "1000 г",
-                "pr-taste": "Гречка",
-                "pr-price": "700 Р."
-              })
-            </li>
-            <li class="catalog__item">
-              @@include("html/product.html", {
-                "pr-img-src": "img/product/catalog-7-mobile.png",
-                "pr-img-src2x": "img/product/catalog-7-mobile@2x.png 2x",
-                "pr-img-src768": "img/product/catalog-7-tablet.png 1x, img/product/catalog-7-tablet@2x.png 2x",
-                "pr-img-src1440": "img/product/catalog-7-desktop.png 1x, img/product/catalog-7-desktop@2x.png 2x",
-                "pr-img-webp": "img/product/catalog-7-mobile.webp 1x, img/product/catalog-7-mobile@2x.webp 2x",
-                "pr-img-webp768": "img/product/catalog-7-tablet.webp 1x, img/product/catalog-7-tablet@2x.webp 2x",
-                "pr-img-webp1440": "img/product/catalog-7-desktop.webp 1x, img/product/catalog-7-desktop@2x.webp 2x",
-                "pr-img-width": "72",
-                "pr-img-height": "84",
-                "pr-img-alt": "Cat Energy slim 500 г со вкусом риса",
-                "pr-title": "Cat Energy slim 500 г",
-                "pr-weight": "500 г",
-                "pr-taste": "Рис",
-                "pr-price": "500 Р."
-              })
-            </li>
-            <li class="catalog__item">
-              <div class="product-all">
-                <h2 class="product-all__title">Показать еще 100500 товаров</h2>
-                <p class="product-all__text">На самом деле вкусов гораздо больше!</p>
-                <a class="product-all__button button button--secondary" href="#">Показать все</a>
-              </div>
+            @@loop("html/product.html", "data/product.json")
+
+            <li class="catalog__item product-all">
+              <h2 class="product-all__title">Показать еще 100500 товаров</h2>
+              <p class="product-all__text">На самом деле вкусов гораздо больше!</p>
+              <a class="product-all__button button button--secondary" href="#">Показать все</a>
             </li>
           </ul>
         </section>
@@ -161,44 +35,18 @@
           <h2 class="optionally__title">
             <span class="optionally__title-text">Дополнительные товары</span>
           </h2>
+
           <ul class="optionally__list">
-            <li class="optionally__item">
-              @@include("html/subproduct.html", {
-                "sp-title": "Сахарозаменитель",
-                "sp-pack": "1 упаковка (100 г)",
-                "sp-price": "200 Р."
-              })
-            </li>
-            <li class="optionally__item">
-              @@include("html/subproduct.html", {
-                "sp-title": "Питьевая вода",
-                "sp-pack": "5 литров",
-                "sp-price": "50 Р."
-              })
-            </li>
-            <li class="optionally__item">
-              @@include("html/subproduct.html", {
-                "sp-title": "Молоко",
-                "sp-pack": "1 литр",
-                "sp-price": "100 Р."
-              })
-            </li>
-            <li class="optionally__item">
-              @@include("html/subproduct.html", {
-                "sp-title": "Витамины",
-                "sp-pack": "1 упаковка (30 г)",
-                "sp-price": "300 Р."
-              })
-            </li>
+            @@loop("html/subproduct.html", "data/subproduct.json")
           </ul>
 
           <div class="optionally__offer">
-            <p class="optionally__offer-text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="optionally__offer-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </section>
 
         @@include("html/contacts.html", {
-          "contacts__block--inner": "contacts__block--inner"
+          "contactInner": "contacts__block--inner"
         })
 
       </main>
