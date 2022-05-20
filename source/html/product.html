@@ -1,0 +1,33 @@
+<div class="product">
+  <a class="product__image-link" href="#" tabindex="-1">
+    <picture>
+      <source type="image/webp" media="(min-width: 1440px)" srcset="@@pr-img-webp1440">
+      <source type="image/webp" media="(min-width: 768px)" srcset="@@pr-img-webp768">
+      <source type="image/webp" srcset="@@pr-img-webp">
+      <source media="(min-width: 1440px)" srcset="@@pr-img-src1440">
+      <source media="(min-width: 768px)" srcset="@@pr-img-src768">
+      <img class="product__image" src="@@pr-img-src" srcset="@@pr-img-src2x" width="@@pr-img-width" height="@@pr-img-height" alt="@@pr-img-alt">
+    </picture>
+  </a>
+
+  <h2 class="product__title">
+    <a class="product__title-link" href="#">@@pr-title</a>
+  </h2>
+
+  <dl class="product__description">
+    <div class="product__description-item">
+      <dt class="product__description-property">Масса</dt>
+      <dd class="product__description-value">@@pr-weight</dd>
+    </div>
+    <div class="product__description-item">
+      <dt class="product__description-property">Вкус</dt>
+      <dd class="product__description-value">@@pr-taste</dd>
+    </div>
+    <div class="product__description-item">
+      <dt class="product__description-property">Цена</dt>
+      <dd class="product__description-value">@@pr-price</dd>
+    </div>
+  </dl>
+
+  <a class="product__button button" href="#">Заказать</a>
+</div>

@@ -56,6 +56,10 @@ $color-button-text-inverse: $color-inverse;
 $color-button-text-inverse-active: rgba($color-button-text-inverse, 0.3);
 $color-button-background: $color-base;
 $color-button-background-hover: $color-dark;
+$color-secondary-button-text: $gray-darken;
+$color-secondary-button-text-active: rgba($color-secondary-button-text, 0.3);
+$color-secondary-button-background: $gray-lightest;
+$color-secondary-button-background-hover: $gray-lighten-234;
 
 // header
 $color-nav-toggle-icon: $gray-darkest;
