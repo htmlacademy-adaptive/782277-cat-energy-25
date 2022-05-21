@@ -11,28 +11,28 @@
     min-height: 302px;
     background-color: $color-intro-background;
     background-image:
-      linear-gradient($color-intro-mask, $color-intro-mask),
-      url("../img/decor/intro-background-mobile.webp");
+      url("../img/decor/intro-background-mobile.webp"),
+      linear-gradient(to right, $color-intro-mask-from 50%, $color-intro-mask-to 50%);
     background-repeat: no-repeat, no-repeat;
     background-position: center 0, center 0;
-    background-size: cover, contain;
+    background-size: contain, cover;
     transform: translateX(-50%);
 
     .no-webp & {
       background-image:
-        linear-gradient($color-intro-mask, $color-intro-mask),
-        url("../img/decor/intro-background-mobile.jpg");
+        url("../img/decor/intro-background-mobile.jpg"),
+        linear-gradient($color-intro-mask-from, $color-intro-mask-to);
     }
 
     @media (min-resolution: 2dppx) {
       background-image:
-        linear-gradient($color-intro-mask, $color-intro-mask),
-        url("../img/decor/intro-background-mobile@2x.webp");
+        url("../img/decor/intro-background-mobile@2x.webp"),
+        linear-gradient($color-intro-mask-from, $color-intro-mask-to);
 
       .no-webp & {
         background-image:
-          linear-gradient($color-intro-mask, $color-intro-mask),
-          url("../img/decor/intro-background-mobile@2x.jpg");
+          url("../img/decor/intro-background-mobile@2x.jpg"),
+          linear-gradient($color-intro-mask-from, $color-intro-mask-to);
       }
     }
   }
@@ -167,7 +167,7 @@
         linear-gradient($color-intro-mask, $color-intro-mask),
         url("../img/decor/intro-background-desktop.webp");
       background-repeat: no-repeat, no-repeat;
-      background-position: center, center;
+      background-position: center, left center;
       background-size: cover, cover;
       transform: none;
 

@@ -33,6 +33,8 @@ $gray-darkest: #000000;
 // Основной цвет проекта
 $color-base: #68b738;
 $color-dark: #5eaa2f;
+$color-dark-97: #65a83d;
+$color-dark-98: #62a53a;
 
 $color-focus: #fdc305;
 $color-error: #ff8282;
@@ -77,6 +79,8 @@ $color-footer-border: $gray-light;
 
 // index-intro
 $color-intro-background: $color-base;
+$color-intro-mask-from: $color-dark-97;
+$color-intro-mask-to: $color-dark-98;
 $color-intro-mask: rgba($color-intro-background, 0.85);
 
 // index-program
