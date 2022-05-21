@@ -151,11 +151,13 @@ $color-form-checkbox-border-focus: $color-focus;
 $color-form-checkbox-border-active: $gray-darkest;
 
 // catalog
-$color-catalog-title-border: $gray-lighten-231;
-$color-catalog-product-title: $gray-darken-34;
-$color-catalog-product-border: $gray-lighten-231;
-$color-catalog-product-all-title: $gray-darken-17;
-$color-catalog-subproduct-title: $gray-darken-34;
+$color-catalog-title: $gray-darken-34;
+$color-catalog-title-hover: $color-base;
+$color-catalog-title-active: $color-dark;
+$color-catalog-background: $gray-lightest;
+$color-catalog-border: $gray-lighten-231;
+$color-catalog-description-border: $gray;
+$color-catalog-product-all-border: $gray-lightest;
 
 // catalog-optionally
 $color-catalog-optionally-background: $color-base;

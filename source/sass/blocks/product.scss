@@ -16,26 +16,26 @@
   grid-area: pr-image;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  min-width: 140px;
-  min-height: 112px;
+  align-items: center;
   margin-bottom: 12px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .product__picture {
   margin: 0;
-
-  .product:first-child & {
-    align-self: center;
-  }
-
-  .product:not(:first-child):nth-child(odd) & {
-    margin-bottom: 5px;
-  }
 }
 
 .product__image {
   @include image-normalize;
+  width: 140px;
+  height: 112px;
 }
 
 .product__title {
@@ -49,13 +49,35 @@
   line-height: math.div(20, 16);
   font-weight: 400;
   text-transform: uppercase;
-  color: $color-catalog-product-title;
+  color: $color-catalog-title;
 }
 
 .product__title-link {
   @include link-reset;
   display: inline-block;
-  color: $color-catalog-product-title;
+  color: $color-catalog-title;
+
+  &:hover {
+    color: $color-catalog-title-hover;
+  }
+
+  &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: $color-catalog-title-active;
+    outline: none;
+  }
 }
 
 .product__description {
@@ -85,15 +107,58 @@
 }
 
 @media (min-width: $medium-width) {
+  .product {
+    grid-template-areas:
+      "pr-image      "
+      "pr-title      "
+      "pr-description"
+      "pr-button     ";
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content 1fr min-content;
+    padding: 8px 36px 39px;
+    background-image: linear-gradient($color-background 16%, $color-catalog-background 16%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .product__image-link {
+    margin-bottom: 22px;
+  }
+
+  .product__image {
+    width: 168px;
+    height: 200px;
+  }
+
   .product__title {
+    margin-bottom: 2px;
+    padding: 10px 42px;
     font-size: 20px;
     line-height: math.div(24, 20);
     text-align: center;
   }
 
   .product__description {
+    margin-bottom: 32px;
     font-size: 16px;
     line-height: math.div(16, 16);
+  }
+
+  .product__description-item {
+    border-bottom: 1px solid $color-catalog-description-border;
+  }
+
+  .product__description-property {
+    padding: 9px 12px 7px 1px;
+  }
+
+  .product__description-value {
+    padding: 9px 1px 7px 12px;
+  }
+
+  .product__button {
+    margin: 0 2px;
   }
 }
 

@@ -9,7 +9,7 @@
   padding: 27px 20px;
   font-size: 36px;
   line-height: math.div(36, 36);
-  border-bottom: 1px solid $color-catalog-title-border;
+  border-bottom: 1px solid $color-catalog-border;
 }
 
 .catalog__list {
@@ -19,5 +19,26 @@
 }
 
 .catalog__item {
-  border-bottom: 1px solid $color-catalog-product-border;
+  border-bottom: 1px solid $color-catalog-border;
+}
+
+@media (min-width: $medium-width) {
+  .catalog__title {
+    min-height: 154px;
+    padding: 40px 30px;
+    font-size: 60px;
+    line-height: math.div(60, 60);
+    border: 0;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    column-gap: 60px;
+    row-gap: 61px;
+    padding: 30px 30px 40px;
+  }
+
+  .catalog__item {
+    border: 0;
+  }
 }
