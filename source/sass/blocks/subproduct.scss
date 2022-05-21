@@ -80,3 +80,26 @@
     line-height: math.div(20, 16);
   }
 }
+
+@media (min-width: $large-width) {
+  .subproduct {
+    grid-template-areas: "sp-title sp-pack sp-price sp-button";
+    grid-template-columns: 35% 1fr 91px 244px;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+
+  .subproduct__title {
+    padding: 8px;
+    padding-left: 0;
+  }
+
+  .subproduct__pack {
+    padding: 12px 10px 8px;
+  }
+
+  .subproduct__price {
+    padding: 12px 8px 8px;
+    text-align: left;
+  }
+}

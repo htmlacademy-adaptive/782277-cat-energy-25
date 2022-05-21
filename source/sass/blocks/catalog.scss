@@ -42,3 +42,20 @@
     border: 0;
   }
 }
+
+@media (min-width: $large-width) {
+  .catalog {
+    max-width: $large-width;
+  }
+
+  .catalog__title {
+    min-height: 136px;
+    padding: 22px 110px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    column-gap: 80px;
+    padding: 30px 110px 47px;
+  }
+}

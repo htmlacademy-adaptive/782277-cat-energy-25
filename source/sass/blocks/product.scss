@@ -163,7 +163,23 @@
 }
 
 @media (min-width: $large-width) {
+  .product {
+    padding: 4px 38px 40px;
+  }
+
+  .product__image-link {
+    margin-bottom: 35px;
+  }
+
+  .product__image {
+    width: 172px;
+    height: 196px;
+  }
+
   .product__title {
+    margin-bottom: 5px;
+    padding: 10px;
+    padding-left: 15px;
     font-size: 20px;
     line-height: math.div(21, 20);
   }
