@@ -1,0 +1,142 @@
+.range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 210px;
+}
+
+.range__button {
+  @include button-reset;
+  width: 49px;
+  padding: 6px;
+  text-align: center;
+}
+
+.range__scale-pin {
+  @include button-reset;
+  position: relative;
+  width: 86px;
+  height: 14px;
+  padding: 6px;
+  background-color: $color-range-pin-background;
+  border: 1px solid $color-range-pin-border;
+  border-radius: 6px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    content: "";
+    width: 36px;
+    height: 6px;
+    background-color: $color-range-pin;
+    border-radius: 6px;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: $medium-width) {
+  .range {
+    min-width: 590px;
+  }
+
+  .range__button {
+    position: relative;
+    width: 70px;
+    padding: 12px;
+    font-size: 20px;
+    line-height: math.div(30, 20);
+
+    &::after {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+      content: "";
+      border-bottom: 1px dotted $color-range-button-border;
+    }
+
+    &:hover::after {
+      border-bottom-style: solid;
+    }
+
+    &:focus {
+      outline: auto;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-outline;
+      outline-offset: -2px;
+    }
+
+    &:active {
+      outline: none;
+    }
+
+    &:active::after {
+      border: 0;
+    }
+  }
+
+  .range__scale {
+    position: relative;
+    width: 426px;
+    height: 6px;
+    background-color: $color-range-scale-background;
+    border-radius: 6px;
+  }
+
+  .range__scale-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    background-color: $color-range-pin-background;
+    border: 1px solid $color-range-pin-border;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1px 3px $color-range-pin-shadow;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      content: "";
+      width: 8px;
+      height: 8px;
+      margin: 0 auto;
+      background-color: $color-range-pin;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px $color-range-pin-shadow-hover;
+    }
+
+    &:focus {
+      outline: auto;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $color-outline;
+      outline-offset: 0;
+    }
+
+    &:active {
+      border-color: $color-range-pin-border-active;
+      box-shadow: 0 3px 5px $color-range-pin-shadow-active;
+      outline: none;
+    }
+  }
+}

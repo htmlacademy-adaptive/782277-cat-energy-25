@@ -1,0 +1,24 @@
+.header {
+  min-width: $small-width;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: $small-width-only) {
+    .header__navigation--inner {
+      border-bottom: 1px solid $color-nav-border;
+    }
+
+    .header__navigation--inner.navigation--nojs {
+      border-bottom: 0;
+    }
+  }
+
+  @media (min-width: $medium-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $large-width) {
+    max-width: $large-width;
+    padding: 0 110px;
+  }
+}

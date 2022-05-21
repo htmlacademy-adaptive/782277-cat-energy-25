@@ -1,0 +1,56 @@
+.questionnaire {
+  min-width: $small-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.questionnaire__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 27px 20px 7px;
+  font-size: 36px;
+  line-height: math.div(36, 36);
+}
+
+.questionnaire__intro {
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  font-family: $font-secondary;
+  font-style: normal;
+  font-size: 14px;
+  line-height: math.div(18, 14);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+@media (min-width: $medium-width) {
+  .questionnaire__title {
+    margin-bottom: 15px;
+    padding: 40px 68px 20px;
+    font-size: 60px;
+    line-height: math.div(60, 60);
+  }
+
+  .questionnaire__intro {
+    margin-bottom: 22px;
+    padding: 20px 70px;
+    font-size: 20px;
+    line-height: math.div(30, 20);
+  }
+}
+
+@media (min-width: $large-width) {
+  .questionnaire {
+    max-width: $large-width;
+  }
+
+  .questionnaire__title {
+    padding: 22px 110px;
+  }
+
+  .questionnaire__intro {
+    padding: 20px 110px;
+  }
+}

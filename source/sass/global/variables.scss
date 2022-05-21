@@ -1,0 +1,170 @@
+// Шрифты проекта
+$font-main: "Arial", sans-serif;
+$font-secondary: "Oswald", "Arial", sans-serif;
+
+$font-button: $font-secondary;
+$font-input: $font-secondary;
+$font-textarea: $font-secondary;
+
+// Ширина viewport для разных устройств
+$small-width: 320px;
+$small-width-only: 767px;
+$medium-width: 768px;
+$medium-width-only: 1439px;
+$large-width: 1440px;
+
+// Оттенки серого
+$transparent: rgba(0, 0, 0, 0);
+$color-inverse: #ffffff;
+
+$gray-lightest: #f2f2f2;
+$gray-lighten-234: #eaeaea;
+$gray-lighten-231: #e7e7e7;
+$gray-lighten: #dcdcdc;
+$gray-light: #d3d3d3;
+$gray: #cdcdcd;
+$gray-186: #bababa;
+$gray-dark: #666666;
+$gray-darken: #444444;
+$gray-darken-34: #222222;
+$gray-darken-17: #111111;
+$gray-darkest: #000000;
+
+// Основной цвет проекта
+$color-base: #68b738;
+$color-dark: #5eaa2f;
+$color-dark-97: #65a83d;
+$color-dark-98: #62a53a;
+
+$color-focus: #fdc305;
+$color-error: #ff8282;
+
+// Общие цвета
+$color-main: $gray-darken;
+$color-background: $color-inverse;
+$color-title: $gray-darkest;
+$color-title-hover: rgba($color-title, 0.6);
+$color-title-active: rgba($color-title, 0.3);
+$color-title-inverse: $color-inverse;
+$color-title-inverse-hover: rgba($color-title-inverse, 0.6);
+$color-title-inverse-active: rgba($color-title-inverse, 0.3);
+$color-text: $gray-darkest;
+$color-text-inverse: $color-inverse;
+$color-outline: $color-focus;
+
+// main-button
+$color-button-text: $gray-darkest;
+$color-button-text-inverse: $color-inverse;
+$color-button-text-inverse-active: rgba($color-button-text-inverse, 0.3);
+$color-button-background: $color-base;
+$color-button-background-hover: $color-dark;
+$color-secondary-button-text: $gray-darken;
+$color-secondary-button-text-active: rgba($color-secondary-button-text, 0.3);
+$color-secondary-button-background: $gray-lightest;
+$color-secondary-button-background-hover: $gray-lighten-234;
+
+// header
+$color-nav-toggle-icon: $gray-darkest;
+$color-nav-item-active: $color-base;
+$color-nav-item-active-inverse: $color-inverse;
+$color-nav-border: $gray-lighten-231;
+
+// footer
+$color-footer-social-icon: $gray-dark;
+$color-footer-social-icon-hover: $color-base;
+$color-footer-copyright-icon: $gray-dark;
+$color-footer-copyright-icon-hover: $color-base;
+$color-footer-background: $gray-lightest;
+$color-footer-border: $gray-light;
+
+// index-intro
+$color-intro-background: $color-base;
+$color-intro-mask-from: $color-dark-97;
+$color-intro-mask-to: $color-dark-98;
+$color-intro-mask: rgba($color-intro-background, 0.85);
+
+// index-program
+$color-program-icon-background: $color-base;
+$color-program-background: $gray-lightest;
+$color-program-border: $gray-light;
+
+// index-guide
+$color-guide-icon-background: $color-base;
+$color-guide-counter-text: $gray-lightest;
+$color-guide-border: $gray-lighten-231;
+
+// index-example
+$color-example-background: $gray-lighten-234;
+$color-example-description-border: $gray;
+
+// index-example-range
+$color-range-scale-background: $gray-lighten;
+$color-range-pin: $color-base;
+$color-range-pin-background: $color-inverse;
+$color-range-pin-border: $gray;
+$color-range-pin-border-active: $color-base;
+$color-range-pin-shadow: rgba($gray-darkest, 0.16);
+$color-range-pin-shadow-hover: rgba($gray-darkest, 0.19);
+$color-range-pin-shadow-active: rgba($gray-darkest, 0.2);
+$color-range-button-border: $gray;
+
+// index-contacts
+$color-contacts-offer: $gray-darken-17;
+$color-contacts-background-inner: $gray-lightest;
+
+// index-contacts-map
+$color-map-tooltip-text: $gray-darken;
+$color-map-tooltip-border: $gray-darken-34;
+$color-map-tooltip-shadow: rgba($gray-darkest, 0.25);
+
+// form-fieldset
+$color-form-fieldset-border: $gray-light;
+$color-form-legend-line: $color-base;
+
+// form-input
+$color-form-input-icon: $gray-darkest;
+$color-form-input-icon-focus: $color-base;
+$color-form-input-icon-error: $color-error;
+$color-form-input-border: $gray-lighten-231;
+$color-form-input-border-hover: $gray;
+$color-form-input-border-focus: $color-focus;
+$color-form-input-border-active: $gray-darkest;
+$color-form-input-border-error: $color-error;
+
+// form-textarea
+$color-form-textarea-border: $gray-lighten-231;
+$color-form-textarea-border-hover: $gray;
+$color-form-textarea-border-focus: $color-focus;
+$color-form-textarea-border-active: $gray-darkest;
+$color-form-textarea-border-error: $color-error;
+
+// form-radio
+$color-form-radio: $color-base;
+$color-form-radio-background: $color-inverse;
+$color-form-radio-border: $gray;
+$color-form-radio-border-hover: $gray-186;
+$color-form-radio-border-focus: $color-focus;
+$color-form-radio-border-active: $gray-darkest;
+
+// form-checkbox
+$color-form-checkbox: $color-base;
+$color-form-checkbox-background: $color-inverse;
+$color-form-checkbox-border: $gray;
+$color-form-checkbox-border-hover: $gray-186;
+$color-form-checkbox-border-focus: $color-focus;
+$color-form-checkbox-border-active: $gray-darkest;
+
+// catalog
+$color-catalog-title: $gray-darken-34;
+$color-catalog-title-hover: $color-base;
+$color-catalog-title-active: $color-dark;
+$color-catalog-background: $gray-lightest;
+$color-catalog-border: $gray-lighten-231;
+$color-catalog-description-border: $gray;
+$color-catalog-product-all-border: $gray-lightest;
+
+// catalog-optionally
+$color-catalog-optionally-background: $color-base;
+$color-catalog-optionally-mask: rgba($color-intro-background, 0.85);
+$color-catalog-optionally-line: $color-base;
+$color-catalog-optionally-border: $gray;

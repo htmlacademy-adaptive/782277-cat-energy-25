@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+  @@include("html/head.html", {
+    "title": "HTML Academy: Кэт энерджи",
+    "description": "Cat Energy: функциональное питание для котов - каталог продукции",
+    "keywords": "Cat Energy PRO, Cat Energy slim, функциональное питание, похудение, набор массы"
+  })
+
+  <body class="page__body">
+    <div class="page__wrapper">
+
+      @@include("html/header.html", {
+        "navigationInner": "header__navigation--inner",
+        "menuInner": "navigation-menu--inner",
+        "catalog": "navigation-menu__link--active"
+      })
+
+      <main class="main">
+        <section class="catalog">
+          <h1 class="catalog__title title">Каталог продукции</h1>
+
+          <ul class="catalog__list">
+            @@loop("html/product.html", "data/product.json")
+
+            <li class="catalog__item product-all">
+              <h2 class="product-all__title">Показать еще 100500 товаров</h2>
+              <p class="product-all__text">На самом деле вкусов гораздо больше!</p>
+              <a class="product-all__button button button--secondary" href="#">Показать все</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="optionally">
+          <h2 class="optionally__title">
+            <span class="optionally__title-text">Дополнительные товары</span>
+          </h2>
+
+          <ul class="optionally__list">
+            @@loop("html/subproduct.html", "data/subproduct.json")
+          </ul>
+
+          <div class="optionally__offer">
+            <p class="optionally__offer-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+          </div>
+        </section>
+
+        @@include("html/contacts.html", {
+          "contactInner": "contacts__block--inner"
+        })
+
+      </main>
+
+      @@include("html/footer.html")
+
+    </div>
+
+    @@include("html/script.html")
+
+  </body>
+</html>

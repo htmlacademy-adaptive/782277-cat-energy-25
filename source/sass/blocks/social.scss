@@ -1,0 +1,47 @@
+.social {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  justify-content: center;
+  column-gap: 12px;
+  padding: 14px;
+}
+
+.social__link {
+  @include link-reset;
+  width: 40px;
+  height: 34px;
+  padding: 6px;
+
+  &:focus {
+    outline: auto;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-outline;
+    outline-offset: 0;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: $color-footer-social-icon;
+}
+
+.social__link:hover .social__icon {
+  fill: $color-footer-social-icon-hover;
+}
+
+@media (min-width: $medium-width) {
+  .social {
+    margin-left: 30px;
+  }
+}

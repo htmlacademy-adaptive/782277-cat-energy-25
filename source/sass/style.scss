@@ -1,1 +1,47 @@
-// Начните писать стили здесь
+// stylelint-disable no-invalid-position-at-import-rule
+
+@use "sass:math";
+
+// Глобальные стили
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+// Общие блоки проекта
+@import "blocks/page.scss";
+@import "blocks/main.scss";
+@import "blocks/title.scss";
+@import "blocks/button.scss";
+
+// Основной header проекта
+@import "blocks/header.scss";
+@import "blocks/navigation.scss";
+@import "blocks/navigation-menu.scss";
+
+// Основной footer проекта
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+
+// Главная страница
+@import "blocks/intro.scss";
+@import "blocks/program.scss";
+@import "blocks/guide.scss";
+@import "blocks/example.scss";
+@import "blocks/toggle.scss";
+@import "blocks/range.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+
+// Страница подбора программы питания
+@import "blocks/questionnaire.scss";
+@import "blocks/form.scss";
+
+// Страница каталога
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/product-all.scss";
+@import "blocks/optionally.scss";
+@import "blocks/subproduct.scss";
+
+// stylelint-enable no-invalid-position-at-import-rule
