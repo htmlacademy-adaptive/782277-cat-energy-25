@@ -6,10 +6,10 @@
   @media (max-width: $small-width-only) {
     .header__navigation--inner {
       border-bottom: 1px solid $color-nav-border;
-    }
 
-    .header__navigation--inner.navigation--nojs {
-      border-bottom: 0;
+      .no-js & {
+        border-bottom: 0;
+      }
     }
   }
 

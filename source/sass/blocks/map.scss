@@ -17,6 +17,10 @@
   height: 100%;
   border: 0;
 
+  .no-js & {
+    display: none;
+  }
+
   &--disabled {
     pointer-events: none;
   }
