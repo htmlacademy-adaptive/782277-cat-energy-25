@@ -96,7 +96,6 @@ const sprite = () => {
 
 const copy = (done) => {
   return gulp.src([
-    'source/data/*.json',
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest'

@@ -168,12 +168,12 @@
     }
   }
 
-  .navigation--nojs .navigation__list {
+  .no-js .navigation__list {
     position: static;
     display: block;
   }
 
-  .navigation--nojs .navigation__toggle {
+  .no-js .navigation__toggle {
     display: none;
   }
 }

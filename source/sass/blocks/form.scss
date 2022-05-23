@@ -262,36 +262,6 @@
   }
 }
 
-.form__input-wrapper:hover .form__input-icon {
-  &--email {
-    stroke: $color-form-input-icon-focus;
-  }
-
-  &--phone {
-    fill: $color-form-input-icon-focus;
-  }
-}
-
-.form__input-wrapper:focus-within .form__input-icon {
-  &--email {
-    stroke: $color-form-input-icon-focus;
-  }
-
-  &--phone {
-    fill: $color-form-input-icon-focus;
-  }
-}
-
-.form__input--error .form__input-icon {
-  &--email {
-    stroke: $color-form-input-icon-error;
-  }
-
-  &--phone {
-    fill: $color-form-input-icon-error;
-  }
-}
-
 .form__fieldset--owner .form__input-icon {
   position: absolute;
   top: 50%;
@@ -308,6 +278,26 @@
     width: 20px;
     height: 21px;
     fill: $color-form-input-icon;
+  }
+}
+
+.form__input-wrapper:focus-within .form__input-icon {
+  &--email {
+    stroke: $color-form-input-icon-focus;
+  }
+
+  &--phone {
+    fill: $color-form-input-icon-focus;
+  }
+}
+
+.form__input--error + .form__input-icon {
+  &--email {
+    stroke: $color-form-input-icon-error;
+  }
+
+  &--phone {
+    fill: $color-form-input-icon-error;
   }
 }
 

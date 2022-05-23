@@ -127,14 +127,14 @@ $color-form-input-icon-focus: $color-base;
 $color-form-input-icon-error: $color-error;
 $color-form-input-border: $gray-lighten-231;
 $color-form-input-border-hover: $gray;
-$color-form-input-border-focus: $color-focus;
+$color-form-input-border-focus: $gray-darken;
 $color-form-input-border-active: $gray-darkest;
 $color-form-input-border-error: $color-error;
 
 // form-textarea
 $color-form-textarea-border: $gray-lighten-231;
 $color-form-textarea-border-hover: $gray;
-$color-form-textarea-border-focus: $color-focus;
+$color-form-textarea-border-focus: $gray-darken;
 $color-form-textarea-border-active: $gray-darkest;
 $color-form-textarea-border-error: $color-error;
 
@@ -143,7 +143,7 @@ $color-form-radio: $color-base;
 $color-form-radio-background: $color-inverse;
 $color-form-radio-border: $gray;
 $color-form-radio-border-hover: $gray-186;
-$color-form-radio-border-focus: $color-focus;
+$color-form-radio-border-focus: $gray-darken;
 $color-form-radio-border-active: $gray-darkest;
 
 // form-checkbox
@@ -151,7 +151,7 @@ $color-form-checkbox: $color-base;
 $color-form-checkbox-background: $color-inverse;
 $color-form-checkbox-border: $gray;
 $color-form-checkbox-border-hover: $gray-186;
-$color-form-checkbox-border-focus: $color-focus;
+$color-form-checkbox-border-focus: $gray-darken;
 $color-form-checkbox-border-active: $gray-darkest;
 
 // catalog
